@@ -1,0 +1,27 @@
+<main class="grid">
+  <div class="text" *ngFor="let pokemon of pokemons ">
+    <a routerLink="/{{pokemon.id}}">
+      <article>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{
+        pokemon.id
+      }}.png">
+
+        <div class="textDecoration">
+          <h3>#{{pokemon.id}}</h3>
+          <h1> {{pokemon.name}}</h1>
+        </div>
+      </article>
+    </a>
+  </div>
+</main>
+
+
+
+<!-- <div class="cards" *ngFor="let pokemon of pokemons"> -->
+<!-- 
+
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{
+  pokemon.id
+}}.png"> -->
+<!-- #{{pokemon.id}}
+      {{pokemon.name}} -->
