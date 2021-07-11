@@ -14,7 +14,7 @@ export class PokeApiService {
   constructor(private http: HttpClient) { }
 
   gottaCatchEmAll(): Observable<PokemonList> {
-    return this.http.get<PokemonList>(`${this.pokeApiURL}pokemon`);
+    return this.gottaCatchEmAllFiltered(1118, 1);
   }
 
   gottaCatchEmAllFiltered(limit: number, offset: number): Observable<PokemonList> {
